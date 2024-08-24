@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+
+    <div class="wrapper">
+        <div class="interactiveImg">
+            <img id='freezeImg' src="assets/images/freezing.jpg" alt="">
+            <img id='coolImg'src="assets/images/cool.jpg" alt="">
+            <img id='hotImg'src="assets/images/hot.jpg" alt="">
+        </div>
+        <div class="remote">
+            <div class="screen">
+                <div class="power">
+                    <p id="powerOn">ON</p>
+                    <p id="powerOff">OFF</p>
+                </div>
+                <div class="degree">
+                    <p id="tempDegree">20</p>
+                </div>
+                <div class="fan">
+                    <img id='lowSpeed'src="assets/images/speed1.png" alt="">
+                    <img id='midSpeed' src="assets/images/speed2.png" alt="">
+                    <img id='highSpeed'src="assets/images/speed3.png" alt="">
+
+                </div>
+            </div>
+
+            <div class="remoteButtons">
+                <div class="switchButtons">
+                    <button id="powerSwitch" onclick="toggleStatus()">OFF</button>
+                    <button id="fanSwitch" onclick="fanToggle()"><i class="fa-solid fa-fan fa-xl" style="color: #373a2c;"></i></button>
+                </div>
+    
+                <div class="tempButtons">                                                                 
+                    <button id="incButton" class='btn'onclick="increaseSpeed()"><span class="text"><i class="fa-solid fa-chevron-up fa-xl" style="color: #373a2c;"></i></span></button>
+                    <button id="decButton" class='btn'onclick="decreaseSpeed()"><span class="text"><i class="fa-solid fa-chevron-down fa-xl" style="color: #373a2c;"></i></span></button>
+                </div>                                                                                     
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

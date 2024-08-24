@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #3e3e42;    */
+}
+
+.wrapper .remote {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    /* background-color: black; */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    /* background-color: black; */
+    
+}
+
+.screen {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    width: 80%;
+    height: 100px;
+    background-color: rgb(107, 122, 71);
+    color: #3e3e42;
+    box-shadow: rgba(27, 27, 27, 0.479) 3px 3px 6px 0px inset, rgba(75, 75, 75, 0.5) -3px -3px 6px 1px inset;
+}
+
+.screen .power {
+    font-weight: 600;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.screen .degree {
+    font-size: 3rem;
+    font-weight: 600;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.screen .fan {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 25px; */
+
+}
+
+.screen .fan img {
+    width: 30%;
+    display: none;
+}
+
+.remote #powerSwitch {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: rgb(197, 48, 48); */
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.remote #fanSwitch {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+}
+
+.remoteButtons {
+    height: 200px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.switchButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tempButtons {
+    width: 40%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tempButtons button {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    margin: 3px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.btn {
+    position: relative;
+    background: #8f8f8f;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    display: block;
+    border-radius: 15px;
+    background: #dadedf;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #42455a;
+    transform: translateY(-2px);
+    transition: transform ease 0.1s;
+}
+
+.btn:active .text {
+    transform: translateY(2px);
+}
+
+.wrapper .interactiveImg{
+    width: 50%;
+}
+.wrapper .interactiveImg img{
+    width: 50%;
+    display: none;
+}
